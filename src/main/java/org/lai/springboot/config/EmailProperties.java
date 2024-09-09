@@ -17,8 +17,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @ConfigurationProperties(value = "email")
 @Component
 @Data
-@Transactional
-@RequestMapping
 public class EmailProperties {
     private String username;
     private String password;

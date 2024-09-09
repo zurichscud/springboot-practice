@@ -12,7 +12,7 @@ import javax.annotation.Resource;
  * @Date: 2024/9/6 下午8:06
  * @Description: TODO
  */
-@Configuration
+//@Configuration
 public class MyConfiguration {
 
     @Bean
