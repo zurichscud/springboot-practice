@@ -6,15 +6,11 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-/**
- * @Author: zurichscud
- * @Date: 2024/9/9 下午11:24
- * @Description: TODO
- */
+
 @Data
 @TableName("t_user")
 public class User {
-    @TableId(type = IdType.INPUT)
+    @TableId
     private String id;
 
     @TableField("username")
@@ -22,7 +18,7 @@ public class User {
 
     private String password;
 
-    @TableField("is_Admin")
+    @TableField("is_admin")
     private Boolean isAdmin;
 
     @TableField("`order`")
