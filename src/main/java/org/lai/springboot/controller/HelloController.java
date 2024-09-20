@@ -1,5 +1,6 @@
 package org.lai.springboot.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.lai.springboot.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
  * @Date: 2024/9/9 下午9:38
  * @Description: TODO
  */
+@Slf4j
 @RestController
 @RequestMapping("/demo")
 public class HelloController {
@@ -17,6 +19,7 @@ public class HelloController {
                       @RequestParam("pwd") String password) {
         System.out.println(username);
         System.out.println(password);
+        log.error("成功访问");
         return "Hello, Spring Boot!";
     }
 
